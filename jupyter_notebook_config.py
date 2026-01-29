@@ -1,0 +1,9 @@
+c = get_config()
+c.ServerApp.token = 'kaggle'
+c.ServerApp.password = ''
+c.NotebookApp.token = 'kaggle'
+c.NotebookApp.password = ''
+c.IdentityProvider.token = 'kaggle'
+c.NotebookApp.open_browser = False
+c.NotebookApp.ip = '0.0.0.0'
+c.NotebookApp.allow_root = True

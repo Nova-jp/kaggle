@@ -1,0 +1,15 @@
+services:
+  kaggle-env:
+    build: .
+    volumes:
+      - .:/work
+    environment:
+      - KAGGLE_API_TOKEN=${KAGGLE_API_TOKEN}
+      - KAGGLE_CONFIG_DIR=/root/.kaggle
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN:-kaggle}
+    ports:
+      - "8888:8888"
+    container_name: kaggle_demand_forecasting
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser --ServerApp.token=${JUPYTER_TOKEN} --IdentityProvider.token=${JUPYTER_TOKEN} --ServerApp.password=''
+    tty: true
+    stdin_open: true

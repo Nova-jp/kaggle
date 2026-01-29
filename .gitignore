@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.local
+
+# Jupyter
+.virtual_documents
+.ipynb_checkpoints
+
+# Docker
+docker-compose.override.yml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS
+.DS_Store
+
+# Kaggle Data & Artifacts
+**/input/*
+**/output/*
+**/data/*
+*.csv
+*.zip
+*.7z
+*.pth
+*.h5
+*.ckpt

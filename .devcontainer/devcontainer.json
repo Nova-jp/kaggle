@@ -1,0 +1,15 @@
+{
+    "name": "Kaggle Python Environment",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "kaggle-env",
+    "workspaceFolder": "/work",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
